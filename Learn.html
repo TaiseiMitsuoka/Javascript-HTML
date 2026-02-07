@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>学習ログ</title>
+    <script src="Learn.js"></script>
+</head>
+<body>
+
+  <h1>学習ログ</h1>
+
+  <h2>学習内容を追加</h2>
+  <div>
+    <input type="date" id="date">
+    <input type="text" id="subject" placeholder="科目">
+    <input type="number" id="time" placeholder="学習時間（時間）">
+    <button onclick="addLog()">追加</button>
+  </div>
+
+  <h2>学習履歴</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>科目</th>
+        <th>時間</th>
+        <th>削除</th>
+      </tr>
+    </thead>
+    <tbody id="logList"></tbody>
+  </table>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
